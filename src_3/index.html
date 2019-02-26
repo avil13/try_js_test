@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test 3</title>
+    <style>
+        /*! CSS Used from: Embedded */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            color: #03c;
+            cursor: pointer;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        #menu .menu {
+            position: absolute;
+            box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+            padding: 10px;
+        }
+
+        .collapsed {
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <a class="js-ctrl">Toggler</a>
+        <div class="js-menu menu collapsed">
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./index_3.js"></script>
+</body>
+
+</html>
