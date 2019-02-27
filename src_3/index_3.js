@@ -1,13 +1,23 @@
+//@ts-check
 function Class() {}
 Class.extend = function (desc) {
     // Реализовать данный метод
     // Dropdown -> Widget -> Class
-    Class.prototype = desc;
-
     function Child() {
+        for (let k in desc) {
+            if (desc.hasOwnProperty(k)) {
+                this[k] = desc[k];
+            }
+        }
+
+        if (desc.constructor) {
+            desc.constructor.apply(this, arguments);
+        }
     }
 
-    Child.prototype = Object.create(Class);
+    Object.setPrototypeOf(Class, Child);
+
+    Child.extend = Class.extend;
 
     return Child;
 };

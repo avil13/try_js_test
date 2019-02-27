@@ -1,0 +1,23 @@
+{
+  "name": "try_js_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avil13/try_js_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avil13/try_js_test/issues"
+  },
+  "homepage": "https://github.com/avil13/try_js_test#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
